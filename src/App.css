@@ -1,0 +1,201 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  background-color: #075E54; /* WhatsApp Green */
+  color: white;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #128C7E; /* Slightly lighter green */
+}
+
+.sidebar-header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.sidebar-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #25D366; /* Bright green for input area */
+}
+
+.search-container i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.search-container input {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.navigation-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #128C7E; /* Slightly lighter green */
+}
+
+.navigation-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.contact img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.contact-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact:hover {
+  background-color: #e0f7fa; /* Light blue */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #075E54; /* WhatsApp Green */
+  color: white;
+}
+
+.chat-header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.chat-header h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-image: url('https://images.unsplash.com/photo-1506748686214e9df14f6d89e3b7caa5b6cc24dc4f69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNodC1iYWNrZ3JvdW5kJTIwbG9uZyUyMHdpdGglMjBtZWRpYSUyMGFzc3VydGFuY2U&ixlib=rb-1.2.1&q=80&w=1080');
+  background-size: cover;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.chat-footer i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #075E54; /* WhatsApp Green */
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.chat-footer button {
+  background-color: #075E54; /* WhatsApp Green */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .chat-body {
+    padding: 5px;
+  }
+
+  .chat-footer {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Chat container */
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  overflow-y: auto;
+  background-image: url('C:/Users/sufiy/Documents/whastappclonefrontend/src/assests/chat.webp'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100%; 
+}
+
+
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.sent .chat-message-content {
+  align-self: flex-end;
+  background-color: #90ee90; 
+  border-radius: 8px 8px 0 8px;
+  padding: 10px;
+  max-width: 60%;
+}
+
+.received .chat-message-content {
+  align-self: flex-start;
+  background-color: #B0C4DE; 
+  border-radius: 8px 8px 8px 0;
+  padding: 10px;
+  max-width: 60%;
+}
+
+.chat-timestamp {
+  font-size: 10px;
+  text-align: right;
+  color: gray;
+  margin-top: 5px;
+}

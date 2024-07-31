@@ -1,0 +1,64 @@
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #40826d, #29ab87); 
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgb(143, 188, 143); 
+  animation: fadeIn 2s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.logo-img {
+  width: 150px; 
+  margin-bottom: 1rem;
+  animation: slideIn 1s ease-out; 
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); }
+  to { transform: translateY(0); }
+}
+
+.splash-container h1 {
+  font-size: 2.5rem; 
+  margin-bottom: 0.5rem;
+  color: #fff; 
+  animation: slideIn 1.5s ease-out; 
+}
+
+.splash-container p {
+  font-size: 1.2rem; 
+  margin-bottom: 1.5rem;
+  color: #ddd; 
+  animation: slideIn 2s ease-out; 
+}
+
+.splash-container button {
+  padding: 0.75rem 2rem; 
+  font-size: 1.2rem; 
+  color: white;
+  background-color: #006400; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: bounceIn 2.5s ease-out; 
+}
+
+@keyframes bounceIn {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+.splash-container button:hover {
+  background-color: #195905; 
+  transform: scale(1.05); 
+}
